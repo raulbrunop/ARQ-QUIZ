@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 3</title>
+    <link rel="stylesheet" href="C:\Users\Usuario\Downloads\html5\aula8.css\atv3.css">
+    <style>
+        body{
+            background-color: blueviolet;
+            color:brown;
+            font: normal 20pt Algerian;
+        }
+        h2{
+            color: black;
+        }
+    </style>
+    </head>
+     <body>
+       
+         <h1>Quiz de Raul Bruno</h1>
+
+         <!-- <img id="anm1" src="animerspcerta.jpg" alt="anime">  -->
+
+        
+         <!--quest1-->
+
+        <div id="pg1" class="pgg1" > 
+             
+         <h2>Em que ano foi lançado Tony Hawk ?</h2>
+          
+         <label>1999</label><input type="checkbox" id="e" name="pg" onclick="resposta('e')"> 
+         <label>1998</label><input type="checkbox" id="r" name="pg" onclick="resposta('r')">
+         <br>
+         <label>2000</label><input type="checkbox" id="rr" name="pg" onclick="resposta('rr')">
+         <label>2001</label><input type="checkbox" id="a" name="pg" onclick="resposta('a')">
+         <br>
+         <input type="text" id="res" placeholder="Resposta">
+         <br>
+         <button  onclick="proxima()">Próxima</button>
+         </div>
+        
+         <!---quest2--->
+  
+        <div id="pg2" class="pgg2" style="display:none">
+    
+         <h2>Qual a função do jogo Tony Hawk ?</h2>
+
+         <label>Esquiar</label><input type="checkbox" id="d" name="pg" onclick="resposta('d')"> 
+         <label>Manobrar na cidade</label><input type="checkbox" id="aa" name="pg" onclick="resposta('aa')">
+         <br>
+         <label>Pular de paraquedas</label><input type="checkbox" id="ee" name="pg" onclick="resposta('ee')">
+         <label>Sobreviver</label><input type="checkbox" id="rrr" name="pg" onclick="resposta('rrr')">
+         <br>
+         <input type="text" id="resp" placeholder="Resposta">
+         <br>
+         <button  onclick="proxima2()">Próxima</button>
+         </div>
+
+        <!--quest 3-->
+
+        <div id="pg3" class="pgg3" style="display:none">
+
+         <h2>Qual cidade o jogo Skate 3 se passa ?</h2>
+        
+         <label>Londres</label><input type="checkbox" id="pg" name="pg" onclick="resposta('pg')"> 
+         <label>Paris</label><input type="checkbox" id="pd" name="pg" onclick="resposta('pd')">
+         <br>
+         <label>California</label><input type="checkbox" id="pa" name="pg" onclick="resposta('pa')">
+         <label>Port Cavertion</label><input type="checkbox" id="pt" name="pg" onclick="resposta('pt')">
+         <br>
+         <input type="text" id="respo" placeholder="Resposta">
+         <br>
+         <button  onclick="proxima3()">Próxima</button>
+        </div>
+        
+        <!--quest 4-->
+
+        <div id="pg4"class="pgg4" style="display:none">
+   
+        <h2>Quando foi revelada o som do Skate 3</h2>
+
+        <label>2015</label><input type="checkbox" id="ph" name="pg" onclick="resposta('ph')"> 
+        <label>2012</label><input type="checkbox" id="pc" name="pg" onclick="resposta('pc')">
+        <br>
+        <label>2008</label><input type="checkbox" id="pp" name="pg" onclick="resposta('pp')">
+        <label>2010</label><input type="checkbox" id="pb" name="pg" onclick="resposta('pb')">
+        <br>
+        <input type="text" id="respon" placeholder="Resposta">
+        <br>
+        <button  onclick="proxima4()">Próxima</button>
+        </div>
+
+        <!--quest 5-->
+
+        
+        <div id="pg5" class="pgg5" style="display:none">
+        
+        <h2>No skate Xl online pode quantos multplyers ?</h2>
+
+        <label>15</label><input type="checkbox" id="px" name="pg" onclick="resposta('px')"> 
+        <label>10</label><input type="checkbox" id="pl" name="pg" onclick="resposta('pl')">
+        <br>
+        <label>20</label><input type="checkbox" id="pv" name="pg" onclick="resposta('pv')">
+        <label>25</label><input type="checkbox" id="pr" name="pg" onclick="resposta('pr')">
+        <br>
+        <input type="text" id="respond" placeholder="Resposta">
+        <br>  
+        <button onclick="proxima5()">Próxima</button>
+       
+        </div>
+
+    <div id="fini" class="finn">
+        <h2>Voçê chegou ao final do quiz até a próxima</h2>    
+    </div>   
+
+       <script type="text/javascript">
+
+         const  proxima = function () {
+         let pr1 = document.getElementById('pg1').style.display= 'none'
+         document.getElementById('pg2').style.display= 'block'
+         document.getElementById('pg3').style.display= 'none'
+         //document.getElementById('pg4').style.display= 'none'
+         //document.getElementById('pg5').style.display= 'none'
+         }
+       
+
+         const  proxima2 = function () {
+        let pr2 =// document.getElementById('pg1').style.display= 'none' 
+         document.getElementById('pg2').style.display= 'none'
+         document.getElementById('pg3').style.display= 'block'
+         //document.getElementById('pg4').style.display= 'none'
+         //document.getElementById('pg5').style.display= 'none'
+         
+        }
+
+
+         const  proxima3 = function () {
+        let pr3  = // document.getElementById('pg1').style.display= 'none' 
+    //   document.getElementById('pg2').style.display= 'none'
+         document.getElementById('pg3').style.display= 'none'
+         document.getElementById('pg4').style.display= 'block'
+      // document.getElementById('pg5').style.display= 'none'
+         
+        }
+
+         const  proxima4 = function () {
+        let pr4 = // document.getElementById('pg1').style.display= 'none' 
+        //  document.getElementById('pg2').style.display= 'none'
+        //  document.getElementById('pg3').style.display= 'none'
+         document.getElementById('pg4').style.display= 'none'
+         document.getElementById('pg5').style.display= 'block'
+        }
+
+         const  proxima5 = function () {
+        document.getElementById('pg5').style.display= 'none'
+        alert("Parabéns por ter chegado ate aqui ")
+        document.getElementById('fin').style.display= 'block'
+        
+        
+        }
+       
+    
+         const resposta = function(opcao){
+    
+        // anime para resposta certa //
+
+       // let rp1 = document.getElementById("e").src= "animerspcerta.jpg"
+       // let rp2 = document.getElementById("res").value + rp1
+
+    
+     // quest 1 //
+
+    switch (opcao) {    
+               case 'e':
+    document.getElementById("res").value= "voçê acertouuu :)  " 
+   // document.getElementById("res").value= "Voçê ganhou 10 pontos"
+    break
+               case 'r': 
+    document.getElementById("res").value= "Errouuu "   
+    break
+               case 'rr' :
+    document.getElementById("res").value=  "Errouu :( "  
+    break
+               case 'a':
+    document.getElementById("res").value= "Errou "  
+    break  
+
+    //quest 2 //
+    
+             case 'd':
+    document.getElementById("resp").value= "Errou " 
+    break
+             case 'aa':
+    document.getElementById("resp").value= "Acertouuu :) " 
+    break  
+             case 'ee':
+    document.getElementById("resp").value= "Errouu :( " 
+    break
+             case 'rrr':
+    document.getElementById("resp").value= "Errouuuuuuu :( " 
+    break   
+    
+    // quest 3 //
+
+    case 'pg':
+    document.getElementById("respo").value= "Errou " 
+    break
+             case 'pd':
+    document.getElementById("respo").value= "Errouuuuuuu :( " 
+    break  
+             case 'pa':
+    document.getElementById("respo").value= "Errouu :( " 
+    break
+             case 'pt':
+    document.getElementById("respo").value= "Acertouuuuu :) " 
+    break   
+    
+    // quest 4 //
+
+    case 'ph':
+    document.getElementById("respon").value= "Errou " 
+    break
+             case 'pc':
+    document.getElementById("respon").value= "Errouuuuuuu :( " 
+    break  
+             case 'pp':
+    document.getElementById("respon").value= "Errouu :( "
+    break
+             case 'pb':
+    document.getElementById("respon").value= "Acertouuuuu :) " 
+    break   
+
+    // quest 5 //
+
+    case 'px':
+    document.getElementById("respond").value= "Errou " 
+    break
+           case 'pl':
+    document.getElementById("respond").value= "Acertouuuuu :) " 
+    break  
+           case 'pv':
+    document.getElementById("respond").value= "Errouu :( " 
+    break
+           case 'pr':
+    document.getElementById("respond").value= "Errouu " 
+    break   
+    }
+    }
+
+</script>
+        
+</body>
+</html>
+
+   
+     
+  
+
+    
+
+
+
+
+
+
+
+
+
+
